@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
+
         double payment = service.calculate(1_000_000, 9.99, 1);
         String result = String.format("%.2f", payment);
         System.out.println("Ваш ежемесячный платеж = " + result);
